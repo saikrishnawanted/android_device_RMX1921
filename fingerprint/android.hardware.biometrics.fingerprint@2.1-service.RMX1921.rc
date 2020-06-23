@@ -1,4 +1,4 @@
-service vendor.fps_hal.x2 /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.x2
+service vendor.fps_hal.RMx1921 /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.RMX1921
     # "class hal" causes a race condition on some devices due to files created
     # in /data. As a workaround, postpone startup until later in boot once
     # /data is mounted.

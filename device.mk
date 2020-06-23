@@ -13,7 +13,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/realme/x2/x2-vendor.mk)
+$(call inherit-product, vendor/realme/RMX1921/RMX1921-vendor.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2340
@@ -191,8 +191,8 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.x2 \
-    vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.x2 \
+    android.hardware.biometrics.fingerprint@2.1-service.RMX1921 \
+    vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.RMX1921 \
     vendor.oppo.hardware.biometrics.fingerprint@2.1
 
 # Fingerprint
@@ -262,7 +262,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.x2 \
+    android.hardware.light@2.0-service.RMX1921 \
     lights.sm6150
 
 # Media
@@ -300,7 +300,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.2-service.x2
+    android.hardware.power@1.2-service.RMX1921
 
 # Preopt SystemUI
 PRODUCT_DEXPREOPT_SPEED_APPS += \
@@ -377,7 +377,7 @@ PRODUCT_COPY_FILES += \
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-service \
-    android.hardware.sensors@1.0-impl.x2 \
+    android.hardware.sensors@1.0-impl.RMX1921 \
     libsensorndkbridge
 
 PRODUCT_COPY_FILES += \
@@ -406,7 +406,7 @@ PRODUCT_PACKAGES += \
 
 # Touch
 PRODUCT_PACKAGES += \
-    lineage.touch@1.0-service.x2
+    lineage.touch@1.0-service.RMX1921
 
 # Trust HAL
 PRODUCT_PACKAGES += \
